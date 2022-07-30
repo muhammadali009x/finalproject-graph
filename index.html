@@ -1,0 +1,1226 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<style>
+    input.fieldsx {
+    width: 100%;
+    text-align: center;
+}
+ 
+.rates h5 {
+    color: white;
+}
+.points h5 {
+    color: white;
+}
+.amount h5 {
+    color: white;
+}
+.filters {
+    width: 100%;
+}
+.flexfilter {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+h5.filteritmens {
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    padding-left: 7px;
+}
+</style>
+<style>
+   .switch {
+    position: relative;
+    display: inline-block;
+    width: -webkit-fill-available;
+    height: 10px;
+}
+.rates {
+    text-align: center;
+}
+.points {
+    text-align: center;
+}
+
+.amount {
+    text-align: center;
+}
+    
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 13px;
+    left: 15px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+    
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    input:checked + #S1 {
+    background: orange;
+}
+input:checked + #S2 {
+    background: gray;
+}
+
+input:checked + #S3 {
+    background: yellow;
+}
+input:checked + #S4 {
+    background: blue;
+}
+input:checked + #S5 {
+    background: green;
+}
+input:checked + #S6 {
+    background: purple;
+}
+input:checked + #S7 {
+    background: brown;
+}
+input:checked + #S8 {
+    background: black;
+}
+input:checked + #S9 {
+    background: #8d3e3e;
+}
+input:checked + #S10 {
+    background: #7968a5;
+}
+input:checked + #S11 {
+    background: #2c4a15;
+}
+input:checked + #S12 {
+    background: #133e46;
+}
+input:checked + #S13 {
+    background: pink;
+}
+.fieldsx {
+    border: solid 1px #80808033;
+}
+ </style>
+
+        <div class="container-fluid" style="margin-top:6%;     margin-bottom: 6%; text-align: center;">
+            <h1>EXCEL PROJECT</h1>
+            <br><br><br>
+                <div class="row">
+                    <div class="col-3">
+                     
+                        <div class="table-area">
+   
+                      
+
+                            <div style="display:flex; background-color: black;">
+                                <div class="rates">
+                                    <h5>Rate</h5>
+                                    <input type="text" class="fieldsx" value="3.250 " id="myInputR1">
+                                </div>
+                                <div class="points">
+                                    <h5>Points</h5>
+                                    <input type="text" class="fieldsx" value="3.070 " id="myInputP1">
+                                </div>
+                                <div class="amount">
+                                    <h5>Cost</h5>
+                                    <input type="text" class="fieldsx" value="$12,280" id="myInputA1">
+                                </div>
+                            </div>
+    
+                                <!-- 222222222 -->
+                             <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="3.310" id="myInputR2">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value="2.793" id="myInputP2">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$11,172" id="myInputA2">
+                                </div>
+                            </div>
+    
+                            <!-- 333333333 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="4.000" id="myInputR3">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value="2.514" id="myInputP3">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$10,056" id="myInputA3">
+                                </div>
+                            </div>
+    
+                            <!-- 444444444444444 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="4.000 " id="myInputR4">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value=" 2.213 " id="myInputP4">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$8,852" id="myInputA4">
+                                </div>
+                            </div>
+    
+                            <!-- 5555555555 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="3.500" id="myInputR5">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value=" 2.063" id="myInputP5">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$8,252" id="myInputA5">
+                                </div>
+                            </div>
+    
+                            <!-- 666666666666 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="3.550" id="myInputR6">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value="1.921" id="myInputP6">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$7,684" id="myInputA6">
+                                </div>
+                            </div>
+    
+                            <!-- 77777777777777 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="3.625" id="myInputR7">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value="1.494" id="myInputP7">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$5,976" id="myInputA7">
+                                </div>
+                            </div>
+    
+                            <!-- 888888888888888 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="3.690 " id="myInputR8">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value="1.102 " id="myInputP8">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$4,408" id="myInputA8">
+                                </div>
+                            </div>
+    
+                            <!-- 9999999999999 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="3.750" id="myInputR9">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value=" 0.836" id="myInputP9">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$3,344" id="myInputA9">
+                                </div>
+                            </div>
+    
+                            <!-- 10 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value=" 3.875" id="myInputR10">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value=" 0.311 " id="myInputP10">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$1,244" id="myInputA10">
+                                </div>
+                            </div>
+    
+                            <!-- 11 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="3.940 " id="myInputR11">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value="0.035" id="myInputP11">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="$140" id="myInputA11">
+                                </div>
+                            </div>
+    
+                            <!-- 12 -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="3.990" id="myInputR12">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value="0.081" id="myInputP12">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="-$324" id="myInputA12">
+                                </div>
+                            </div>
+
+                             <!-- 13 -->
+                             <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" class="fieldsx" value="4.125 " id="myInputR13">            
+                                </div>
+                                <div class="points">        
+                                    <input type="text" class="fieldsx" value="0.588" id="myInputP13">
+                                </div>
+                                <div class="amount">   
+                                    <input type="text" class="fieldsx" value="-$2,352" id="myInputA13">
+                                </div>
+                            </div>
+    
+                                <br> 
+                                  <!-- Total calculation -->
+                                  <!-- rate -->
+                             <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" value="Rate" class="fieldsx" id="">            
+                                </div>  
+                                <div class="amount">   
+                                    <input type="text" value="3.970 " class="fieldsx" id="">
+                                </div>
+                            </div>
+                            <!-- mos -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" value="Mos" class="fieldsx" id="">            
+                                </div>  
+                                <div class="amount">   
+                                    <input type="text" value="360 " class="fieldsx" id="">
+                                </div>
+                            </div>
+                            <!-- amount -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" value="Amount" class="fieldsx" id="">            
+                                </div>  
+                                <div class="amount">   
+                                    <input type="text" value="$400,000" class="fieldsx" id="total-amount">
+                                </div>
+                            </div>
+                            <!-- payment -->
+                            <div style="display:flex; ">
+                                <div class="rates">
+                                    <input type="text" value="Payment" class="fieldsx" id="">            
+                                </div>  
+                                <div class="amount">   
+                                    <input type="text" value="$1,502"  class="fieldsx" id="">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-7">
+
+                       
+
+
+<div id="graph-wrapper">
+    <!-- <div class="graph-info">
+        <a href="javascript:void(0)" class="visitors">Visitors</a>
+        <a href="javascript:void(0)" class="returning">Returning Visitors</a>
+ 
+        <a href="#" id="bars"><span></span></a>
+        <a href="#" id="lines" class="active"><span></span></a>
+    </div> -->
+ 
+    <div class="graph-container">
+        <div id="graph-lines"></div>
+        <div id="graph-bars"></div>
+    </div>
+</div>
+<br><br><br>
+<!-- <input id="sad"  type="number" placeholder="rate">
+<input type="number" placeholder="Points">
+<input type="number" placeholder="Amounts"> -->
+
+
+
+                     </div>
+                     <div class="col-2" style="    display: flex;
+                     align-items: start;
+                     text-align: center;">
+ 
+                        <div class="filters">
+                            <!-- 1 -->
+                            <div class="flexfilter">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span id="S1" class="slider round"></span>
+                                  </label>
+                                  <h5 class="filteritmens" id="getvaluex1" ></h5>
+                            </div>
+                           
+                            <!-- 2 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S2" class="slider  round"></span>
+                            </label><h5 class="filteritmens" id="getvaluex2" ></h5></div>
+                            <!-- 3 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S3" class="slider  round"></span>
+                            </label><h5 class="filteritmens" id="getvaluex3" ></h5></div>
+                            <!-- 4 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                                
+                              <input type="checkbox" checked>
+                              <span id="S4" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex4" ></h5></div>
+                            <!-- 5 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S5" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex5" ></h5></div>
+                            <!-- 6 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S6" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex6" ></h5></div>
+                            <!-- 7 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S7" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex7" ></h5></div>
+                            <!-- 8 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S8" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex8" ></h5></div>
+                            <!-- 9 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S9" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex9" ></h5></div>
+                            <!-- 10 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S10" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex10" ></h5></div>
+                            <!-- 11 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S11" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex11" ></h5></div>
+                            <!-- 12 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span id="S12" class="slider  round"></span>
+                            </label> <h5 class="filteritmens" id="getvaluex12" ></h5></div>
+                            <!-- 13 -->
+                            <div class="flexfilter">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span id="S13" class="slider  round"></span>
+                              </label> <h5 class="filteritmens" id="getvaluex13" ></h5></div>
+                                              </div>
+                     </div>
+                </div>
+
+            
+        </div>
+
+<!-- end Graph HTML -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://designmodo.com/demo/interactivegraph/js/jquery.flot.min.js"></script>
+<script>
+     
+
+
+     
+
+$(document).ready(function () {
+
+  	 
+
+        // All colors
+        var Color1 = 'orange'
+        var Color2 = 'gray'
+        var Color3 = 'yellow'
+        var Color4 = 'blue'
+        var Color5 = 'green'
+        var Color6 = 'purple'
+        var Color7 = 'brown'
+        var Color8 = 'black'
+        var Color9 = '#8d3e3e'
+        var Color10 = '#7968a5'
+        var Color11 = '#2c4a15'
+        var Color12 = '#133e46'
+        var Color13 = 'pink'
+        
+        // 1
+        document.getElementById('S1').addEventListener('click', function name2() {
+            if ( Color1 === 'orange' ) {
+                Color1 = 'white'
+                document.getElementById('myInputR1').style.backgroundColor = "red";
+
+            } else{
+                Color1 = 'orange'
+                document.getElementById('myInputR1').style.backgroundColor = "white";
+            }
+        })
+        // 2
+        document.getElementById('S2').addEventListener('click', function name2() {
+            if ( Color2 === 'gray' ) {
+                Color2 = 'white'
+                document.getElementById('myInputR2').style.backgroundColor = "red";
+            } else{
+                Color2 = 'gray'
+                document.getElementById('myInputR2').style.backgroundColor = "white";
+            }
+        })
+        // 3
+        document.getElementById('S3').addEventListener('click', function name2() {
+            if ( Color3 === 'yellow' ) {
+                Color3 = 'white'
+                document.getElementById('myInputR3').style.backgroundColor = "red";
+            } else{
+                Color3 = 'yellow'
+                document.getElementById('myInputR3').style.backgroundColor = "white";
+            }
+        })
+        // 4
+        document.getElementById('S4').addEventListener('click', function name2() {
+            if ( Color4 === 'blue' ) {
+                Color4 = 'white'
+                document.getElementById('myInputR4').style.backgroundColor = "red";
+            } else{
+                Color4 = 'blue'
+                document.getElementById('myInputR4').style.backgroundColor = "white";
+            }
+        })
+        // 5
+        document.getElementById('S5').addEventListener('click', function name2() {
+            if ( Color5 === 'green' ) {
+                Color5 = 'white'
+                document.getElementById('myInputR5').style.backgroundColor = "red";
+            } else{
+                Color5 = 'green'
+                document.getElementById('myInputR5').style.backgroundColor = "white";
+            }
+        })
+        // 6
+        document.getElementById('S6').addEventListener('click', function name2() {
+            if ( Color6 === 'purple' ) {
+                Color6 = 'white'
+                document.getElementById('myInputR6').style.backgroundColor = "red";
+            } else{
+                Color6 = 'purple'
+                document.getElementById('myInputR6').style.backgroundColor = "white";
+            }
+        })
+        // 7
+        document.getElementById('S7').addEventListener('click', function name2() {
+            if ( Color7 === 'brown' ) {
+                Color7 = 'white'
+                document.getElementById('myInputR7').style.backgroundColor = "red";
+            } else{
+                Color7 = 'brown'
+                document.getElementById('myInputR7').style.backgroundColor = "white";
+            }
+        })
+        // 8
+        document.getElementById('S8').addEventListener('click', function name2() {
+            if ( Color8 === 'black' ) {
+                Color8 = 'white'
+                document.getElementById('myInputR8').style.backgroundColor = "red";
+            } else{
+                Color8 = 'black'
+                document.getElementById('myInputR8').style.backgroundColor = "white";
+            }
+        })
+        // 9
+        document.getElementById('S9').addEventListener('click', function name2() {
+            if ( Color9 === '#8d3e3e' ) {
+                Color9 = 'white'
+                document.getElementById('myInputR9').style.backgroundColor = "red";
+            } else{
+                Color9 = '#8d3e3e'
+                document.getElementById('myInputR9').style.backgroundColor = "white";
+            }
+        })
+        // 10
+        document.getElementById('S10').addEventListener('click', function name2() {
+            if ( Color10 === '#7968a5' ) {
+                Color10 = 'white'
+                document.getElementById('myInputR10').style.backgroundColor = "red";
+            } else{
+                Color10 = '#7968a5'
+                document.getElementById('myInputR10').style.backgroundColor = "white";
+            }
+        })
+        // 11
+        document.getElementById('S11').addEventListener('click', function name2() {
+            if ( Color11 === '#2c4a15' ) {
+                Color11 = 'white'
+                document.getElementById('myInputR11').style.backgroundColor = "red";
+            } else{
+                Color11 = '#2c4a15'
+                document.getElementById('myInputR11').style.backgroundColor = "white";
+            }
+        })
+        // 12
+        document.getElementById('S12').addEventListener('click', function name2() {
+            if ( Color12 === '#133e46' ) {
+                Color12 = 'white'
+                document.getElementById('myInputR12').style.backgroundColor = "red";
+            } else{
+                Color12 = '#133e46'
+                document.getElementById('myInputR12').style.backgroundColor = "white";
+            }
+        })
+
+        document.getElementById('S13').addEventListener('click', function name2() {
+            if ( Color13 === 'pink' ) {
+                Color13 = 'white'
+                document.getElementById('myInputR13').style.backgroundColor = "red";
+            } else{
+                Color13 = 'pink'
+                document.getElementById('myInputR13').style.backgroundColor = "white";
+            }
+        })
+
+function name() {
+    
+    // var totalr = $("#total-amount").val();
+    var id_of_div = $("#total-amount").val();
+var totalr = parseInt(id_of_div.replace(/[^0-9.]/g, ""));
+console.log(totalr);//12
+    var totalr2 = ''
+ 
+   
+
+    if ( 9 < totalr) {
+        totalr2 = 1
+    }
+
+    if ( 90< totalr) {
+        totalr2 = 10
+    }
+
+    if ( 900 < totalr) {
+        totalr2 = 100
+    }
+
+    if ( 9000 < totalr) {
+        totalr2 = 1000
+    }
+
+    if ( 90000 < totalr) {
+        totalr2 = 10000
+    }
+
+    if ( 900000 < totalr) {
+        totalr2 = 100000
+    }
+
+    if ( 9000000 < totalr) {
+        totalr2 = 1000000
+    }
+
+    if ( 90000000 < totalr) {
+        totalr2 = 10000000
+    }
+
+    if ( 900000000 < totalr) {
+        totalr2 = 100000000
+    }
+
+    if ( 9000000000 < totalr) {
+        totalr2 = 1000000000
+    }
+
+    if ( 90000000000 < totalr) {
+        totalr2 = 10000000000
+    }
+
+    if ( 900000000000 < totalr) {
+        totalr2 = 100000000000
+    }
+
+    if ( 900000000000 < totalr) {
+        totalr2 = 1000000000000
+    }
+
+    if ( 90000000000000 < totalr) {
+        totalr2 = 10000000000000
+    }
+    // totalamounthere
+   
+  
+  
+
+    var incraselenght = totalr2 * 8;
+    console.log(totalr2);
+    // Rates
+        var dataR1 = $("#myInputR1").val();
+        var dataR2 = $("#myInputR2").val();
+        var dataR3 = $("#myInputR3").val();
+        var dataR4 = $("#myInputR4").val();
+        var dataR5 = $("#myInputR5").val();
+        var dataR6 = $("#myInputR6").val();
+        var dataR7 = $("#myInputR7").val();
+        var dataR8 = $("#myInputR8").val();
+        var dataR9 = $("#myInputR9").val();
+        var dataR10 = $("#myInputR10").val();
+        var dataR11 = $("#myInputR11").val();
+        var dataR12 = $("#myInputR12").val();
+        var dataR13 = $("#myInputR13").val();
+
+        document.getElementById('getvaluex1').innerText = dataR1;
+        document.getElementById('getvaluex2').innerText = dataR2;
+        document.getElementById('getvaluex3').innerText = dataR3;
+        document.getElementById('getvaluex4').innerText = dataR4;
+        document.getElementById('getvaluex5').innerText = dataR5;
+        document.getElementById('getvaluex6').innerText = dataR6;
+        document.getElementById('getvaluex7').innerText = dataR7;
+        document.getElementById('getvaluex8').innerText = dataR8;
+        document.getElementById('getvaluex9').innerText = dataR9;
+        document.getElementById('getvaluex10').innerText = dataR10;
+        document.getElementById('getvaluex11').innerText = dataR11;
+        document.getElementById('getvaluex12').innerText = dataR12;
+        document.getElementById('getvaluex13').innerText = dataR13;
+
+          // Point
+          var dataP1 = $("#myInputP1").val();
+        var dataP2 = $("#myInputP2").val();
+        var dataP3 = $("#myInputP3").val();
+        var dataP4 = $("#myInputP4").val();
+        var dataP5 = $("#myInputP5").val();
+        var dataP6 = $("#myInputP6").val();
+        var dataP7 = $("#myInputP7").val();
+        var dataP8 = $("#myInputP8").val();
+        var dataP9 = $("#myInputP9").val();
+        var dataP10 = $("#myInputP10").val();
+        var dataP11 = $("#myInputP11").val();
+        var dataP12 = $("#myInputP12").val();
+        var dataP13 = $("#myInputP13").val();
+        
+
+        //leight set
+          var grow1 = dataR1 * totalr2 * dataP1
+          var grow2 = dataR2 * totalr2 * dataP2
+          var grow3 = dataR3 * totalr2 * dataP3
+          var grow4 = dataR4 * totalr2 * dataP4 
+          var grow5 = dataR5 * totalr2 * dataP5
+          var grow6 = dataR6 * totalr2 * dataP6
+          var grow7 = dataR7 * totalr2 * dataP7
+          var grow8 = dataR8 * totalr2 * dataP8
+          var grow9 = dataR9 * totalr2 * dataP9
+          var grow10 = dataR10 * totalr2 * dataP10
+          var grow11 = dataR11 * totalr2 * dataP11
+          var grow12 = dataR12 * totalr2 * dataP12
+          var grow13 = dataR13 * totalr2 * dataP13
+
+          var LineRow1Grow1 = grow1 / 1.5
+          var LineRow2Grow1 = LineRow1Grow1 / 1.5
+          var LineRow3Grow1 = LineRow2Grow1 / 1.5
+          var LineRow4Grow1 = LineRow3Grow1 / 1.5
+          var LineRow5Grow1 = LineRow4Grow1 / 1.5
+
+          var LineRow1Grow2 = grow2 / 1.5
+          var LineRow2Grow2 = LineRow1Grow2 / 1.5
+          var LineRow3Grow2 = LineRow2Grow2 / 1.5
+          var LineRow4Grow2 = LineRow3Grow2 / 1.5
+          var LineRow5Grow2 = LineRow4Grow2 / 1.5
+
+          var LineRow1Grow3 = grow3 / 1.5
+          var LineRow2Grow3 = LineRow1Grow3 / 1.5
+          var LineRow3Grow3 = LineRow2Grow3 / 1.5
+          var LineRow4Grow3 = LineRow3Grow3 / 1.5
+          var LineRow5Grow3 = LineRow4Grow3 / 1.5
+
+          var LineRow1Grow4 = grow4 / 1.5
+          var LineRow2Grow4 = LineRow1Grow4 / 1.5
+          var LineRow3Grow4 = LineRow2Grow4 / 1.5
+          var LineRow4Grow4 = LineRow3Grow4 / 1.5
+          var LineRow5Grow4 = LineRow4Grow4 / 1.5
+
+          var LineRow1Grow5 = grow5 / 1.5
+          var LineRow2Grow5 = LineRow1Grow5 / 1.5
+          var LineRow3Grow5 = LineRow2Grow5 / 1.5
+          var LineRow4Grow5 = LineRow3Grow5 / 1.5
+          var LineRow5Grow5 = LineRow4Grow5 / 1.5
+
+          var LineRow1Grow6 = grow6 / 1.5
+          var LineRow2Grow6 = LineRow1Grow6 / 1.5
+          var LineRow3Grow6 = LineRow2Grow6 / 1.5
+          var LineRow4Grow6 = LineRow3Grow6 / 1.5
+          var LineRow5Grow6 = LineRow4Grow6 / 1.5
+
+          var LineRow1Grow7 = grow7 / 1.5
+          var LineRow2Grow7 = LineRow1Grow7 / 1.5
+          var LineRow3Grow7 = LineRow2Grow7 / 1.5
+          var LineRow4Grow7 = LineRow3Grow7 / 1.5
+          var LineRow5Grow7 = LineRow4Grow7 / 1.5
+
+          var LineRow1Grow8 = grow8 / 1.5
+          var LineRow2Grow8 = LineRow1Grow8 / 1.5
+          var LineRow3Grow8 = LineRow2Grow8 / 1.5
+          var LineRow4Grow8 = LineRow3Grow8 / 1.5
+          var LineRow5Grow8 = LineRow4Grow8 / 1.5
+
+          var LineRow1Grow9 = grow9 / 1.5
+          var LineRow2Grow9 = LineRow1Grow9 / 1.5
+          var LineRow3Grow9 = LineRow2Grow9 / 1.5
+          var LineRow4Grow9 = LineRow3Grow9 / 1.5
+          var LineRow5Grow9 = LineRow4Grow9 / 1.5
+
+          var LineRow1Grow10 = grow10 / 1.5
+          var LineRow2Grow10 = LineRow1Grow10 / 1.5
+          var LineRow3Grow10 = LineRow2Grow10 / 1.5
+          var LineRow4Grow10 = LineRow3Grow10 / 1.5
+          var LineRow5Grow10 = LineRow4Grow10 / 1.5
+
+          var LineRow1Grow11 = grow11 / 1.5
+          var LineRow2Grow11 = LineRow1Grow11 / 1.5
+          var LineRow3Grow11 = LineRow2Grow11 / 1.5
+          var LineRow4Grow11 = LineRow3Grow11 / 1.5
+          var LineRow5Grow11 = LineRow4Grow11 / 1.5
+
+          var LineRow1Grow12 = grow12 / 1.5
+          var LineRow2Grow12 = LineRow1Grow12 / 1.5
+          var LineRow3Grow12 = LineRow2Grow12 / 1.5
+          var LineRow4Grow12 = LineRow3Grow12 / 1.5
+          var LineRow5Grow12 = LineRow4Grow12 / 1.5
+
+          var LineRow1Grow13 = grow13 / 1.5
+          var LineRow2Grow13 = LineRow1Grow13 / 1.5
+          var LineRow3Grow13 = LineRow2Grow13 / 1.5
+          var LineRow4Grow13 = LineRow3Grow13 / 1.5
+          var LineRow5Grow13 = LineRow4Grow13 / 1.5
+        
+          
+
+//           var totalyy = $("#totalamounthere").val();
+
+// var findtotal = '$400,000'.match(/\d+/)
+// console.log(findtotal);
+
+
+         
+          
+          
+           
+
+       
+    var graphData = [{
+			// Visits
+			data: [  [6, LineRow5Grow1], [8, LineRow4Grow1],  [10, LineRow3Grow1], [12, LineRow2Grow1], [14, LineRow1Grow1],  [15, grow1]],
+			color: Color1
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow2], [8, LineRow4Grow2],  [10, LineRow3Grow2], [12, LineRow2Grow2], [14, LineRow1Grow2], [15, grow2] ],
+			color: Color2
+		}, {
+			// Returning Visits
+			data: [ [6, LineRow5Grow3], [8, LineRow4Grow3],  [10, LineRow3Grow3], [12, LineRow2Grow3], [14, LineRow1Grow3], [15, grow3]],
+			color: Color3,
+			points: { radius: 4, fillColor: '#77b7c5' }
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow4], [8, LineRow4Grow4],  [10, LineRow3Grow4], [12, LineRow2Grow4], [14, LineRow1Grow4], [15, grow4]],
+			color: Color4
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow5], [8, LineRow4Grow5],  [10, LineRow3Grow5], [12, LineRow2Grow5], [14, LineRow1Grow5], [15, grow5] ],
+			color: Color5
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow6], [8, LineRow4Grow6],  [10, LineRow3Grow6], [12, LineRow2Grow6], [14, LineRow1Grow6], [15, grow6] ],
+			color: Color6
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow7], [8, LineRow4Grow7],  [10, LineRow3Grow7], [12, LineRow2Grow7], [14, LineRow1Grow7],  [15, grow7] ],
+			color: Color7
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow8], [8, LineRow4Grow8],  [10, LineRow3Grow8], [12, LineRow2Grow8], [14, LineRow1Grow8], [15, grow8] ],
+			color: Color8
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow9], [8, LineRow4Grow9],  [10, LineRow3Grow9], [12, LineRow2Grow9], [14, LineRow1Grow9], [15, grow9] ],
+			color: Color9
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow10], [8, LineRow4Grow10],  [10, LineRow3Grow10], [12, LineRow2Grow10], [14, LineRow1Grow10], [15, grow10] ],
+			color: Color10
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow11], [8, LineRow4Grow11],  [10, LineRow3Grow11], [12, LineRow2Grow11], [14, LineRow1Grow11], [15, grow11] ],
+			color: Color11
+		}, {
+			// Visits
+			data: [ [6, LineRow5Grow12], [8, LineRow4Grow12],  [10, LineRow3Grow12], [12, LineRow2Grow12], [14, LineRow1Grow12], [15, grow12] ],
+			color: Color12
+		},  
+        {
+			// Visits
+			data: [ [6, LineRow5Grow13], [8, LineRow4Grow13],  [10, LineRow3Grow13], [12, LineRow2Grow13], [14, LineRow1Grow13],[15, grow13] ],
+			color: Color13
+		},  
+        {
+			// range csutom field
+			data: [ [6, totalr2], [15, incraselenght] ],
+			color: 'white'
+		},   
+	];
+
+    // Lines Graph #############################################
+	$.plot($('#graph-lines'), graphData, {
+		series: {
+			points: {
+				show: true,
+				radius: 5
+			},
+			lines: {
+				show: true
+			},
+			shadowSize: 0
+		},
+		grid: {
+			color: '#646464',
+			borderColor: 'transparent',
+			borderWidth: 20,
+			hoverable: true
+		},
+		xaxis: {
+			tickColor: 'transparent',
+			tickDecimals: 2
+		},
+		yaxis: {
+			tickSize: totalr2
+		}
+	});
+// Bars Graph ##############################################
+$.plot($('#graph-bars'), graphData, {
+		series: {
+			bars: {
+				show: true,
+				barWidth: .9,
+				align: 'center'
+			},
+			shadowSize: 0
+		},
+		grid: {
+			color: '#646464',
+			borderColor: 'transparent',
+			borderWidth: 20,
+			hoverable: true
+		},
+		xaxis: {
+			tickColor: 'transparent',
+			tickDecimals: 2
+		},
+		yaxis: {
+			tickSize: 1000
+		}
+	});
+
+    // Graph Toggle ############################################
+	$('#graph-bars').hide();
+
+$('#lines').on('click', function (e) {
+    $('#bars').removeClass('active');
+    $('#graph-bars').fadeOut();
+    $(this).addClass('active');
+    $('#graph-lines').fadeIn();
+    e.preventDefault();
+});
+
+$('#bars').on('click', function (e) {
+    $('#lines').removeClass('active');
+    $('#graph-lines').fadeOut();
+    $(this).addClass('active');
+    $('#graph-bars').fadeIn().removeClass('hidden');
+    e.preventDefault();
+});
+// Tooltip #################################################
+function showTooltip(x, y, contents) {
+		$('<div id="tooltip">' + contents + '</div>').css({
+			top: y - 16,
+			left: x + 20
+		}).appendTo('body').fadeIn();
+
+       
+	}
+    var previousPoint = null;
+ 
+
+$('#graph-lines, #graph-bars').bind('plothover', function (event, pos, item) {
+    if (item) {
+        if (previousPoint != item.dataIndex) {
+            previousPoint = item.dataIndex;
+            $('#tooltip').remove();
+            var x = item.datapoint[0],
+                y = item.datapoint[1];
+                showTooltip(item.pageX, item.pageY, y + ' Chart ');
+        }
+    } else {
+        $('#tooltip').remove();
+        previousPoint = null;
+    }
+});
+
+}
+
+
+	
+	
+	
+	
+	
+	
+    setInterval(name,1000);
+
+});
+
+
+ 
+
+</script>
+
+<style>/* #######################################################
+
+    HOW TO CREATE AN INTERACTIVE GRAPH USING CSS3 & JQUERY [TUTORIAL]
+    
+    "How to create an Interactive Graph using CSS3 & jQuery [Tutorial]" was specially made for DesignModo by our friend Valeriu Timbuc.
+    
+    Links:
+    http://vtimbuc.net
+    https://designmodo.com
+    http://vladimirkudinov.com
+    
+    ######################################################## */
+    
+    body{background:#f2f2f2 }
+    
+    /* Resets */
+    .graph-container,
+    .graph-container div,
+    .graph-container a,
+    .graph-container span {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Gradinet and Rounded Corners */
+    .graph-container, #tooltip, .graph-info a {
+        background: #ffffff;
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f9f9f9 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f9f9f9));
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f9f9f9 100%);
+        background: -o-linear-gradient(top,  #ffffff 0%,#f9f9f9 100%);
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f9f9f9 100%);
+        background: linear-gradient(to bottom,  #ffffff 0%,#f9f9f9 100%);
+    
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    
+    /*  Graph Container */
+    .graph-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+        
+        -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+        -moz-box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+        box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+    }
+    
+    .graph-container > div {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        top: -10px;
+        left: 3px;
+    }
+    
+    .graph-info {
+        width: 590px;
+        margin-bottom: 10px;
+    }
+    
+    /* Text Styles */
+    #tooltip, .graph-info a {
+        height: 20px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        color: #646464;
+    }
+    
+    .tickLabel {
+        font-weight: bold;
+        font-size: 12px;
+        color: #666;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    /* Tooltip */
+    #tooltip {
+        position: absolute;
+        display: none;
+        padding: 5px 10px;
+        border: 1px solid #e1e1e1;
+    }
+    
+    /* Links */
+    .graph-info a {
+        position: relative;
+        display: inline-block;
+        float: left;
+        /* padding: 7px 10px 5px 30px; */
+        margin-right: 10px;
+        text-decoration: none;
+        cursor: default;
+    }
+    
+    a.visitors {
+    padding: 21px;
+}
+a.returning {
+    padding: 21px;
+}
+    /* Color Circle for Links */
+    .graph-info a:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: 13px;
+        left: 13px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    
+    /* Colors For each Link */
+    .graph-info .visitors { border-bottom: 2px solid #71c73e; }
+    .graph-info .returning { border-bottom: 2px solid #77b7c5; }
+    
+    .graph-info .visitors:before { background: #71c73e; }
+    .graph-info .returning:before { background: #77b7c5; }
+    
+    /* Lines & Bars Buttons */
+    #lines, #bars {
+        width: 34px;
+        height: 32px;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 10px;
+        border-bottom: 2px solid #71c73e;
+        float: right;
+        cursor: pointer;
+    }
+    
+    #lines.active, #bars.active {
+        background: #82d344;
+        background: -moz-linear-gradient(top,  #82d344 0%, #71c73e 100%);
+         background: -webkit-linear-gradient(top,  #82d344 0%,#71c73e 100%);
+        background: -o-linear-gradient(top,  #82d344 0%,#71c73e 100%);
+        background: -ms-linear-gradient(top,  #82d344 0%,#71c73e 100%);
+        background: linear-gradient(to bottom,  #82d344 0%,#71c73e 100%);
+    }
+    
+    #lines span, #bars span {
+        display: block;
+        width: 34px;
+        height: 32px;
+        background: url('https://designmodo.com/demo/interactivegraph/img/lines.png') no-repeat 9px 12px;
+    }
+    
+    #bars span { background: url('https://designmodo.com/demo/interactivegraph/img/bars.png') no-repeat center 10px; }
+    
+    #lines.active span { background-image: url('https://designmodo.com/demo/interactivegraph/img/lines_active.png'); }
+    #bars.active span { background-image: url('https://designmodo.com/demo/interactivegraph/img/bars_active.png'); }
+    
+    /* Hide the First and Last Y Label */
+    .yAxis .tickLabel:first-child,
+    .yAxis .tickLabel:last-child { display: none; }
+    
+    /* Clear Floats */
+    .graph-info:before, .graph-info:after,
+    .graph-container:before, .graph-container:after {
+        content: '';
+        display: block;
+        clear: both;
+    }</style>
